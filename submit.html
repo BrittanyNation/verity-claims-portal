@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ask or Appeal — Verity Claims Portal</title>
+<meta name="description" content="Ask a question about a claim or start an appeal with Verity, a fictional health plan. Validated form with a real confirmation reference.">
+<meta property="og:title" content="Ask or Appeal — Verity Claims Portal">
+<meta property="og:description" content="Ask about a claim or start an appeal in minutes. A portfolio project by Brittany Nation.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://brittanynation.github.io/verity-claims-portal/submit.html">
+<meta property="og:image" content="https://brittanynation.github.io/verity-claims-portal/og-image.png">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site"><a class="logo" href="index.html">Verity<span> Claims</span></a>
+<nav class="main"><a href="index.html">My Claims</a><a href="submit.html" aria-current="page">Ask or Appeal</a><a href="help.html">Help and Glossary</a></nav></header>
+<main class="wrap">
+<h1>Ask a question or start an appeal</h1>
+<p>Questions get a written reply. Appeals reopen the claim for a second review. Both start the same way here, and both end with a reference you can look up below. This is a demo: submissions live only in your browser.</p>
+<img src="images/p7176319.jpg" alt="A member writing a question about a claim at home" style="width:100%;height:220px;object-fit:cover;border-radius:14px">
+<form id="askForm" novalidate>
+<label for="fName">Full name</label><input id="fName" autocomplete="name"><div class="err" id="eName"></div>
+<label for="fEmail">Email</label><input id="fEmail" type="email" autocomplete="email"><div class="err" id="eEmail"></div>
+<label for="fType">I want to</label><select id="fType"><option value="Question">Ask a question about a claim</option><option value="Appeal">Appeal a denied or partly paid claim</option><option value="Document">Send a document the plan asked for</option></select>
+<label for="fClaim">Claim number (format VC-2026-0000)</label><input id="fClaim" placeholder="VC-2026-1842"><div class="err" id="eClaim"></div>
+<label for="fDate">Date of service</label><input id="fDate" type="date"><div class="err" id="eDate"></div>
+<label for="fMsg">Your message (at least 20 characters)</label><textarea id="fMsg" rows="5" placeholder="Say what looks wrong or what you are sending, in your own words"></textarea><div class="err" id="eMsg"></div>
+<p><button class="btn" type="submit">Send</button></p>
+</form>
+<div id="confirmBox" class="ok hidden" role="status"></div>
+<h2 style="margin-top:36px">Your submissions</h2>
+<div class="toolbar"><input id="lookupInput" type="search" placeholder="Look up by reference, claim number, or word" aria-label="Look up submissions"><span id="subCount" class="meta"></span></div>
+<div id="subList"></div>
+<p id="subEmpty" class="meta">No submissions yet. Your first sent question or appeal will appear here.</p>
+</main>
+<footer class="site">Verity Claims Portal is an original portfolio concept by Brittany Nation. Verity is fictional and no real health information should be entered here.</footer>
+<script src="submit.js"></script></body></html>
