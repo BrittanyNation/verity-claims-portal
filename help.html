@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help and Glossary — Verity Claims Portal</title>
+<meta name="description" content="Plain word glossary, FAQs, support hours, and a callback request for Verity, a fictional health plan.">
+<meta property="og:title" content="Help and Glossary — Verity Claims Portal">
+<meta property="og:description" content="Claim words in plain language, FAQs, and a callback form. A portfolio project by Brittany Nation.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://brittanynation.github.io/verity-claims-portal/help.html">
+<meta property="og:image" content="https://brittanynation.github.io/verity-claims-portal/og-image.png">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site"><a class="logo" href="index.html">Verity<span> Claims</span></a>
+<nav class="main"><a href="index.html">My Claims</a><a href="submit.html">Ask or Appeal</a><a href="help.html" aria-current="page">Help and Glossary</a></nav></header>
+<main class="wrap">
+<h1>Help, in plain words</h1>
+<p>Claim paperwork uses short words for big ideas. This page translates them, answers the questions members ask most, and offers a callback if you would rather talk it through.</p>
+<img src="images/p8293778.jpg" alt="A support team member ready to help at a desk" style="width:100%;height:220px;object-fit:cover;border-radius:14px">
+<h2>Glossary</h2>
+<div class="toolbar"><input id="glossSearch" type="search" placeholder="Search a word, for example deductible" aria-label="Search glossary"><span id="glossCount" class="meta"></span></div>
+<div id="glossList"></div>
+<p id="glossEmpty" class="hidden">No glossary word matches that search yet. Try a shorter word.</p>
+<h2>Common questions</h2>
+<div id="faqList"></div>
+<h2>Support hours</h2>
+<table id="hoursTable"><tr><th>Day</th><th>Written replies</th><th>Callbacks</th></tr></table>
+<h2>Request a callback</h2>
+<form id="cbForm" novalidate>
+<label for="cbName">Full name</label><input id="cbName"><div class="err" id="eCbName"></div>
+<label for="cbPhone">Phone (10 digits)</label><input id="cbPhone" inputmode="tel" placeholder="5551234567"><div class="err" id="eCbPhone"></div>
+<label for="cbWhen">Best time</label><select id="cbWhen"><option>Weekday morning</option><option>Weekday afternoon</option><option>Saturday morning</option></select>
+<p><button class="btn" type="submit">Request callback</button></p>
+</form>
+<div id="cbConfirm" class="ok hidden" role="status"></div>
+<h2>The Verity Letter</h2>
+<p>One short email a month: claim tips and deadline reminders. No spam, ever.</p>
+<form id="letterForm" novalidate><label for="letterEmail">Email</label><input id="letterEmail" type="email"><div class="err" id="eLetter"></div><p><button class="btn secondary" type="submit">Join the letter</button></p></form>
+<div id="letterNote" class="meta" role="status"></div>
+</main>
+<footer class="site">Verity Claims Portal is an original portfolio concept by Brittany Nation. Verity is fictional and no real health information should be entered here.</footer>
+<script src="help.js"></script></body></html>
